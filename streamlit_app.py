@@ -2,6 +2,9 @@ import streamlit as st
 import socket
 from streamlit.web.server.websocket_headers import _get_websocket_headers
 
+cookies = cookie_manager.get_all()
+cookies = cookie_manager.get_all()
+st.write(cookies)
 
 def open(self):
     # self.request.remote_ip contains the IP address of the user connecting
