@@ -3,6 +3,12 @@ import socket
 from streamlit.web.server.websocket_headers import _get_websocket_headers
 
 
+def open(self):
+    # self.request.remote_ip contains the IP address of the user connecting
+    # to the Streamlit app. You could send this to an analytics platform like MixPanel
+    ip = self.request.remote_ip
+    self._session = self._server._create_report_session(self)
+
 # headers = _get_websocket_headers()
 # st.write(headers)
 
@@ -18,4 +24,6 @@ def get_local_ip():
 
 st.title("IP 주소 확인")
 ip = get_local_ip()
-st.write(f"IP 주소: {ip}")
+open()
+st.write(ip)
+# st.write(f"IP 주소: {ip}")
