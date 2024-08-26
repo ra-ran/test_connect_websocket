@@ -1,10 +1,10 @@
 import streamlit as st
 import socket
 from streamlit.web.server.websocket_headers import _get_websocket_headers
-import st.extra_streamlit_components.CookieManager.cookie_manager
+import extra_streamlit_components as stx
 
-cookies = cookie_manager.get_all()
-cookies = cookie_manager.get_all()
+cookies = stx.cookie_manager.get_all()
+cookies = stx.cookie_manager.get_all()
 st.write(cookies)
 
 def open(self):
