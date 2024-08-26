@@ -1,6 +1,7 @@
 import streamlit as st
 import socket
 from streamlit.web.server.websocket_headers import _get_websocket_headers
+import st.extra_streamlit_components.CookieManager.cookie_manager
 
 cookies = cookie_manager.get_all()
 cookies = cookie_manager.get_all()
