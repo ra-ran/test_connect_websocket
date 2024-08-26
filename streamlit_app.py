@@ -2,8 +2,16 @@ import streamlit as st
 import socket
 from streamlit.web.server.websocket_headers import _get_websocket_headers
 
-headers = _get_websocket_headers()
-st.write(headers)
+import logging
+import streamlit
+
+# If you're curious of all the loggers
+st.write(streamlit.logger._loggers)  
+
+streamlit_root_logger = logging.getLogger(streamlit.__name__)
+
+# headers = _get_websocket_headers()
+# st.write(headers)
 
 # def get_local_ip():
 #     try:
