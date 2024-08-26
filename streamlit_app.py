@@ -11,6 +11,7 @@ def open(self):
     # to the Streamlit app. You could send this to an analytics platform like MixPanel
     ip = self.request.remote_ip
     self._session = self._server._create_report_session(self)
+    st.write(ip)
 
 # headers = _get_websocket_headers()
 # st.write(headers)
