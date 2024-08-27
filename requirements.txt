@@ -2,5 +2,3 @@
 
 streamlit
 extra_streamlit_components
-python-socketio
-tornado
