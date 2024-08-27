@@ -1,7 +1,6 @@
+
+
 streamlit
 extra_streamlit_components
-socketio
-gc
-asyncio
-typing
-tornado.web
+python-socketio
+tornado
