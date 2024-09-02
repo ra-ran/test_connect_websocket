@@ -1,13 +1,8 @@
-
-
 streamlit
-extra_streamlit_components
-
-streamlit_option_menu
+extra-streamlit-components
+streamlit-option-menu
 matplotlib
-
 numpy
 seaborn
-streamlit_float
-sqlite3
-streamlit.runtime.scriptrunner
+streamlit-float
+sqlite3-api
