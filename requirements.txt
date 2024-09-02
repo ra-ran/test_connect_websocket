@@ -4,9 +4,6 @@ streamlit
 extra_streamlit_components
 
 streamlit_option_menu
-matplotlib.pyplot
-os
-io
 matplotlib
 
 numpy
