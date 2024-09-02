@@ -102,7 +102,7 @@ class DBManager:
     from datetime import datetime, timedelta
     def check_and_update_last_visit(self, ip_address):
         self.connect()
-        current_time = datetime.now()
+        current_time = datetime.datetime.now()
         with self.connection:
             cursor = self.connection.cursor()
             cursor.execute('SELECT last_visit_time FROM USER WHERE IP = ?', (ip_address,))
