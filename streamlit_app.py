@@ -50,7 +50,7 @@ class DBManager:
     def create_UserTable(self):
         self.connect()
         with self.connection:
-            self.connection.execute("CREATE TABLE IF NOT EXISTS USER(IP text PRIMARY KEY, last_visit_date text);")
+            self.connection.execute("CREATE TABLE IF NOT EXISTS USER(IP text PRIMARY KEY, last_visit_date text, last_visit_time timestamp);")
     
     def insert_user(self, ip_address):
         self.connect()
