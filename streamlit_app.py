@@ -56,7 +56,7 @@ class DBManager:
         self.connect()
         if ip_address == "::1":
             return 0
-        current_date = datetime.now().strftime('%Y-%m-%d')
+        current_date = datetime.datetime.now().strftime('%Y-%m-%d')
         try:
             with self.connection:
                 self.connection.execute('''
