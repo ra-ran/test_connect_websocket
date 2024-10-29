@@ -7859,7 +7859,7 @@ def main() :
                     )
         ############test
         st.write("------- **test** -------")
-        st.write(f"ip : {get_remote_ip()}")
+        st.write(f"ip : {current_ip}")
         db.getList()
 
         st.write("------- **Visitor Statistics** -------")
